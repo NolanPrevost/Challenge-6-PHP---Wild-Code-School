@@ -66,28 +66,44 @@
 //   'whip' => $indyWeapon = 'fists',
 //   'gun' => $indyWeapon = 'whip',
 // };
-
 // echo 'Indy comes with his ' . $indyWeapon . ' and smashed the bad guy yeah !!!' ;
 
 // Challenge 6
-function writeSecretSentence(string $animal, string $element): string
-{
-  $determinant = "";
-  match ($element)
-  {
-    "feu" => $determinant = "au ",
-    "terre" => $determinant = "à la ",
-    default => $determinant = "à l' ",
-  };
-  return "Le " . $animal . " s'incline face " . $determinant . $element;
-}
+// function writeSecretSentence(string $animal, string $element): string
+// {
+//   $determinant = "";
+//   match ($element)
+//   {
+//     "feu" => $determinant = "au ",
+//     "terre" => $determinant = "à la ",
+//     default => $determinant = "à l' ",
+//   };
+//   return "Le " . $animal . " s'incline face " . $determinant . $element;
+// }
 
-$animals = ["pangolin", "paresseux", "macaque rhésus"];
-$animals = $animals[rand(0, 2)];
+// $animals = ["pangolin", "paresseux", "macaque rhésus"];
+// $animals = $animals[rand(0, 2)];
 
-$elements = ["terre", "air", "feu", "eau"];
-$elements = $elements[rand(0, 2)];
+// $elements = ["terre", "air", "feu", "eau"];
+// $elements = $elements[rand(0, 2)];
 
-echo writeSecretSentence($animals, $elements);
+// echo writeSecretSentence($animals, $elements);
 
+// Challenge 7
+// $characters = [
+//   "Negan" => [
+//       "city" => "The Sanctuary",
+//       "weapon" => "Lucille"
+//   ],
+//   "Daryl" => [
+//       "city" => "Alexandria",
+//       "weapon" => "crossbow"
+//   ],
+//   "Ezekiel" => [
+//       "city" => "The Kingdom",
+//       "weapon" => "Shiva"
+//   ]
+// ];
+// $characters[] = ["Nolan" => ["city" => "Manéglise", "weapon" => "koupkoup"]];
+// var_dump($characters);
 
